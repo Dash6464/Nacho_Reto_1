@@ -347,6 +347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 449408835}
   - component: {fileID: 449408836}
+  - component: {fileID: 449408837}
   m_Layer: 0
   m_Name: Title_screen_theme
   m_TagString: Untagged
@@ -362,12 +363,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449408834}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -158.43137, y: -184.15932, z: 2.0396037}
+  m_LocalPosition: {x: 481.56863, y: 175.84068, z: 2.0396037}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2059158947}
-  m_RootOrder: 7
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &449408836
 AudioSource:
@@ -380,10 +381,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4a7ca3effee79434c8505750b26c401d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -465,6 +466,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &449408837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449408834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0b9bbfbb4dd85448b20332f3ecff0c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 449408836}
 --- !u!1 &644467928
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,14 +844,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 752854813}
         m_TargetAssemblyTypeName: Boton, Assembly-CSharp
-        m_MethodName: cambiarEscena
+        m_MethodName: iniciarJuego
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level_1
+          m_StringArgument: Temple_Dark
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &752854813
@@ -1813,7 +1827,6 @@ RectTransform:
   - {fileID: 272008065}
   - {fileID: 1346744471}
   - {fileID: 913770571}
-  - {fileID: 449408835}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

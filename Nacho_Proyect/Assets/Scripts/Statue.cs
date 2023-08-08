@@ -29,7 +29,14 @@ public class Statue : MonoBehaviour
         }
         if (cont >= resetcont)
         {
-            Instantiate(_Arrow, new Vector3(transform.position.x - 1f, transform.position.y + 1.8f, transform.position.z), Quaternion.identity);
+            if (isLeft)
+            {
+                Instantiate(_Arrow, new Vector3(transform.position.x - 1f, transform.position.y + 1.6f, transform.position.z), Quaternion.identity);
+            }
+            else
+            {
+                Instantiate(_Arrow, new Vector3(transform.position.x + 1f, transform.position.y + 1.6f, transform.position.z), Quaternion.identity);
+            }
             cont = 0;
         }
         else

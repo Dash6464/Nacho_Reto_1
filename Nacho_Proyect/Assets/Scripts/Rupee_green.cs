@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Rupee_green : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    public Points puntaje;
+    public AudioClip audioClip;
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collider.gameObject.tag == "Player")
         {
+            Rupie_SFX.Instance.ejecutarSonido(audioClip);
+            puntaje.SumarPuntos(1);
             Destroy(gameObject);
         }
     }

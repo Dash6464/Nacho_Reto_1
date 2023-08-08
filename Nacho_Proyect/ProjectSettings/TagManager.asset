@@ -7,6 +7,12 @@ TagManager:
   - Piso
   - Escudo
   - Espada
+  - Pared
+  - Plat_Mov_Ver
+  - Mummy
+  - Plat_Caida
+  - Zora
+  - Abismo
   layers:
   - Default
   - TransparentFX

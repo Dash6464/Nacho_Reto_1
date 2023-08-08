@@ -15,13 +15,8 @@ public class Boton : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler
     public TextMeshPro texto;
     public GameObject pauseMenu;
     public GameObject Pause;
-    private bool sound;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        sound = true;
-    }
     public void OnPointerClick(PointerEventData eventData)
     {
         audioSource.clip = clicSound;
@@ -36,6 +31,18 @@ public class Boton : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler
 
     public void cambiarEscena(string escena)
     {
+        SceneManager.LoadScene(escena);
+    }
+
+    public void entrarEscenaGameOver(string escena)
+    {
+        Theme_Music_Game_over.instance.audio.Stop();
+        SceneManager.LoadScene(escena);
+    }
+
+    public void iniciarJuego(string escena)
+    {
+        Theme_Menu.instance.audio.Stop();
         SceneManager.LoadScene(escena);
     }
 

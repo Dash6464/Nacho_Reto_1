@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Title_Screen.unity
     guid: 517433c9acd3a2c43b5e64a1aa475b48
   - enabled: 1
+    path: Assets/Scenes/Select_level.unity
+    guid: fb7f3c23f6f1f394597d02e6e98013bd
+  - enabled: 1
     path: Assets/Scenes/Opcions.unity
     guid: 5a94ae20a50c5de4a941111c32bddfb0
   - enabled: 1
@@ -21,6 +24,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Credits.unity
     guid: 580e9f6636f9edf49ad7667427ed3c19
   - enabled: 1
-    path: Assets/Scenes/Level_1.unity
+    path: Assets/Scenes/Temple_Dark.unity
     guid: 42ce695e1f91bcf458e5bd61c49aad7d
+  - enabled: 1
+    path: Assets/Scenes/Temple_Ice.unity
+    guid: 8c36bbb9bcc7e0a4b8f2405203b6e92c
+  - enabled: 1
+    path: Assets/Scenes/Temple_Rock.unity
+    guid: 8ab8074d8032b0340ad786c6dddde521
+  - enabled: 1
+    path: Assets/Scenes/Game_over.unity
+    guid: e905d26b729d9044a80b0a73db1ec4e7
+  - enabled: 1
+    path: Assets/Scenes/Select_level_game_over.unity
+    guid: 70e52158d57bc1448b8f3aa31d425d8f
+  - enabled: 1
+    path: Assets/Scenes/Congratulation.unity
+    guid: ace4902ba984240449668720d603ed21
   m_configObjects: {}
